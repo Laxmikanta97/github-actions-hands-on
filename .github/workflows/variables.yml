@@ -29,5 +29,6 @@ jobs:
           echo "First Name: $First_Name"
           echo "Cloud: $cloud"
           echo "Project ID: ${{ vars.PROJECT_ID }}"
-          echo "$Greeting $First_Name is using $cloud with project
+          
+          echo "$Greeting $First_Name is using $cloud with project ${{ vars.PROJECT_ID }}!"
             
