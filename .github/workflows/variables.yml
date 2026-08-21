@@ -7,7 +7,7 @@ on:
 # Available to all jobs and steps
 env:
   cloud: google-cloud
-  Project ID: github-actions-project
+  
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
@@ -29,7 +29,6 @@ jobs:
           echo "Greeting: $Greeting"
           echo "First Name: $First_Name"
           echo "Cloud: $cloud"
-          echo "Project ID: ${{ vars.PROJECT_ID }}"
-          
-          echo "$Greeting $First_Name is using $cloud with project ${{ vars.PROJECT_ID }}!"
+                   
+          echo "$Greeting $First_Name is using $cloud"
             
