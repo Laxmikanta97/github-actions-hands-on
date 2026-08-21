@@ -17,7 +17,8 @@ A practical guide and workflow examples for automating CI/CD with GitHub Actions
     * Understanding environment variables, Configuration Varianles , Using Context variables 
     * User inputs in Manual Workflow
 
-    <img width="1536" height="1024" alt="Copilot_20260821_204232" src="https://github.com/user-attachments/assets/d0bdf017-0690-4e48-a260-cfc2d1106bab" />
+   <img width="1536" height="1024" alt="variable_notes" src="https://github.com/user-attachments/assets/3c98c25e-4949-41ce-bed5-3bfb1075a291" />
+
 
       
 
