@@ -7,7 +7,7 @@ on:
 # Available to all jobs and steps
 env:
   cloud: google-cloud
-
+  PROJECT_ID: github-actions-project
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
         # Available only to this step
         env:
           First_Name: Laxmikanta
-          PROJECT_ID: github-actions-project
+         
 
         run: |
           echo "Greeting: $Greeting"
