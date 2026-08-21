@@ -1,0 +1,33 @@
+name: Learning Variables
+
+on:
+  workflow_dispatch:
+
+# Workflow-level variable
+# Available to all jobs and steps
+env:
+  cloud: google-cloud
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+
+    # Job-level variable
+    # Available to all steps inside this job
+    env:
+      Greeting: Hello
+
+    steps:
+      - name: "Say Hello to Laxmikanta"
+        # Step-level variable
+        # Available only to this step
+        env:
+          First_Name: Laxmikanta
+
+        run: |
+          echo "Greeting: $Greeting"
+          echo "First Name: $First_Name"
+          echo "Cloud: $cloud"
+          echo "Project ID: ${{ vars.PROJECT_ID }}"
+          echo "$Greeting $First_Name is using $cloud with project
+            
