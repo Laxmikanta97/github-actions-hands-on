@@ -23,6 +23,7 @@ jobs:
         # Available only to this step
         env:
           First_Name: Laxmikanta
+          PROJECT_ID: github-actions-project
 
         run: |
           echo "Greeting: $Greeting"
