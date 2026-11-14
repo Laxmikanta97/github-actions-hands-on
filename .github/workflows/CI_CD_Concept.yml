@@ -6,7 +6,7 @@ on:
 
 jobs:
   code:
-    runs-on: ubuntu-latest
+    runs-on: my-runner
     steps:
       - name: Clone the code
         run: echo "Clonning the code"
